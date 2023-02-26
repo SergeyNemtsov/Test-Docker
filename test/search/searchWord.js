@@ -4,7 +4,7 @@ module.exports = {
       .navigate()
       .waitForElementVisible("@pageTitle", "Catalog title visible")
       .assert.titleContains("TestGym", "title ok")
-      .assert.textContains("@pageTitle", "Каталог", "Catalog OK");
+      .assert.textContains("@pageTitle", "Каталог", "Catalog ok");
   },
 
   after(browser) {
@@ -17,7 +17,7 @@ module.exports = {
     browser.page.catalog()
       .search(word)
       .waitForElementVisible("@pageTitle", "Title here")
-      .assert.titleContains("TestGym", "title ok")
+      .assert.titleContains("TestGym", "title OK")
       .assert.textContains("@pageTitle", "Каталог", "Каталог title ok")
       .assert.urlContains(encodeURI(word))
       .assert.textContains('@productTitle', word);
