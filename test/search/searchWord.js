@@ -4,7 +4,7 @@ module.exports = {
       .navigate()
       .waitForElementVisible("@pageTitle", "Catalog title visible")
       .assert.titleContains("TestGym", "title ok")
-      .assert.textContains("@pageTitle", "Каталог", "Catalog ok");
+      .assert.textContains("@pageTitle", "Каталог", "Catalog OK");
   },
 
   after(browser) {
